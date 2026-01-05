@@ -1,25 +1,33 @@
 {
-  "name": "server",
+  "name": "systemwalletserver",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/FlareMindsTech/SystemWalletServer#readme",
+  "bugs": {
+    "url": "https://github.com/FlareMindsTech/SystemWalletServer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlareMindsTech/SystemWalletServer.git"
+  },
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "axios": "^1.13.2",
-    "bcryptjs": "^3.0.3",
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.0.2",
-    "node-cron": "^4.2.1",
-    "nodemailer": "^6.9.8"
+    "nodemailer": "^7.0.12",
+    "nodemon": "^3.1.11"
   }
 }
